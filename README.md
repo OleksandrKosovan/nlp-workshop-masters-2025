@@ -6,8 +6,8 @@ This workshop demonstrates how to build a Proof of Concept (PoC) for processing 
 
 1. Create a virtual environment:
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+python -m venv venv-poc
+source venv-poc/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 2. Install dependencies:
@@ -50,6 +50,11 @@ pip install -r requirements.txt
 Start the Streamlit application:
 ```bash
 streamlit run src/app.py
+```
+
+For de-bugging:
+```
+cd .. && python -m venv venv-poc && source venv-poc/bin/activate && pip install -r requirements.txt
 ```
 
 ## Notes
